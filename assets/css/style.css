@@ -1492,7 +1492,7 @@ button.mfp-arrow:active {
 .services .item > .inner-content {
   position: relative;
   padding: 25px 15px 15px 15px;
-  text-align: justify;
+  /*text-align: justify;*/
 }
 
 @media (min-width: 480px) {

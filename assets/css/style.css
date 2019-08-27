@@ -70,6 +70,27 @@
 
 -----------------------------------------------------------------------*/
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
+
 
 /*---------------------------------------------------------------------*/
 
@@ -509,7 +530,7 @@ header.hero .hero-body .hero-text h1 {
     }
 }
 
-header.hero .hero-body .hero-text h1.small {
+header.hero .hero-body .hero-text h2.small {
     color: #ffffff;
     font-size: 45px;
     font-weight: 400;
@@ -517,22 +538,22 @@ header.hero .hero-body .hero-text h1.small {
 }
 
 @media (min-width: 600px) {
-    header.hero .hero-body .hero-text h1.small {
+    header.hero .hero-body .hero-text h2.small {
         font-size: 58px;
     }
 }
 
 @media (min-width: 768px) {
-    header.hero .hero-body .hero-text h1.small {
+    header.hero .hero-body .hero-text h2.small {
         font-size: 66px;
     }
 }
 
-header.hero .hero-body .hero-text h1.small>span.blinker {
+header.hero .hero-body .hero-text h2.small>span.blinker {
     position: relative;
 }
 
-header.hero .hero-body .hero-text h1.small>span.blinker:before {
+header.hero .hero-body .hero-text h2.small>span.blinker:before {
     position: absolute;
     top: 50%;
     left: 8px;
@@ -556,7 +577,7 @@ header.hero .hero-body .hero-text h1.small>span.blinker:before {
 }
 
 @media (min-width: 768px) {
-    header.hero .hero-body .hero-text h1.small>span.blinker:before {
+    header.hero .hero-body .hero-text h2.small>span.blinker:before {
         left: 10px;
         width: 3px;
         height: 40px;
@@ -565,7 +586,7 @@ header.hero .hero-body .hero-text h1.small>span.blinker:before {
 }
 
 @media (min-width: 992px) {
-    header.hero .hero-body .hero-text h1.small>span.blinker:before {
+    header.hero .hero-body .hero-text h2.small>span.blinker:before {
         width: 3px;
         height: 50px;
         margin-top: -25px;
@@ -1363,7 +1384,7 @@ header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-page.active span {
     left: 40px;
 }
 
-.portfolio .item>.project-wrapper:hover>.project-title>h4 {
+.portfolio .item>.project-wrapper:hover>.project-title>h3 {
     margin-top: 0px;
     opacity: 1;
 }
@@ -1403,7 +1424,8 @@ header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-page.active span {
     background-color: #fed136;
 }
 
-.portfolio .item>.project-wrapper>.project-title>h4 {
+.portfolio .item>.project-wrapper>.project-title>h3 {
+    font-size: 18px;
     display: block;
     position: absolute;
     z-index: 15;
@@ -1606,7 +1628,8 @@ button.mfp-arrow:active {
     font-size: 38px;
 }
 
-.services .item>.inner-content>h4 {
+.services .item>.inner-content>h3 {
+    font-size: 18px;
     margin-top: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -2321,7 +2344,8 @@ button.mfp-arrow:active {
     box-shadow: 3px 3px 10px #0d0c0d;
 }
 
-.circle-chart .item>h4 {
+.circle-chart .item>h3 {
+    font-size: 18px;
     margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -2358,14 +2382,17 @@ button.mfp-arrow:active {
     margin-bottom: 0px;
 }
 
-.bar-chart>.item>h4 {
+.bar-chart>.item>h3 {
+    font-size: 18px;
     margin-bottom: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 @media (min-width: 1280px) {
-    .bar-chart>.item>h4 {
+    .bar-chart>.item>h3 {
+        font-size: 18px;
+        margin-bottom: 18px;
         margin-bottom: 12px;
     }
 }
